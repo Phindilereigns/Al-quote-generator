@@ -1,0 +1,154 @@
+:root {
+  --primary-color: #1f7a8c; 
+  --secondary-color: #3aafa9;
+  --background-color: #f0f5f9;
+  --box-shadow: 0px 20px 6px rgba(31, 122, 140, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--background-color);
+  padding: 0 10px;
+}
+
+.container {
+  margin: 60px auto;
+  max-width: 600px;
+}
+
+h1 {
+  color: #1b262c;
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+header p {
+  margin-top: 10px;
+  text-align: center;
+  color: #4a4e69;
+}
+
+main {
+  margin: 30px 0 15px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+footer {
+  font-size: 13px;
+  text-align: center;
+  color: #1b262c;
+}
+
+.special-text {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 30px;
+  padding: 25px;
+}
+
+.prompt {
+  border: 1px solid rgba(27, 38, 44, 0.5);
+  border-radius: 50px;
+  box-sizing: border-box;
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  padding: 14px 20px;
+  width: 100%;
+}
+
+.quote-type {
+  line-height: 1.8;
+  color: #4a4e69;
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+  color: #fff;
+  font-size: 15px;
+  padding: 14px 24px;
+  width: 100%;
+  transition: all 200ms ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid rgba(27, 38, 44, 0.5);
+  color: #fff;
+  cursor: pointer;
+}
+
+.quote-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+}
+
+#quote {
+  border-left: 3px solid var(--primary-color);
+  line-height: 2.3;
+  padding: 5px 20px;
+  color: #4a4e69;
+}
+
+/* for phones */
+@media (max-width: 575px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  main {
+    margin: 10px 0;
+  }
+
+  header p,
+  .form-container,
+  .prompt,
+  .submit-btn {
+    font-size: 14px;
+  }
+
+  .container {
+    margin: 40px auto;
+  }
+
+  .form-container {
+    margin-bottom: 15px;
+    padding: 17px;
+  }
+
+  .prompt,
+  .submit-btn {
+    padding: 10px 15px;
+  }
+
+  .quote-container {
+    padding: 15px;
+  }
+
+  #quote {
+    font-size: 13px;
+    padding: 3px 15px;
+  }
+}
